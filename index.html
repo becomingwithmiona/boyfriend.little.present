@@ -1,0 +1,110 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>for you, my sweetness</title><meta name="robots" content="noindex">
+<style>
+:root{--deep:#0f2f6b;--mid:#2f5fb3;--sky:#9fc3ff;--ice:#eef4ff}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:Georgia,'EB Garamond',serif;color:var(--deep);background:linear-gradient(180deg,#e6efff,#fff 40%,#eef4ff);min-height:100vh;overflow-x:hidden}
+.sans{font-family:-apple-system,system-ui,Helvetica,Arial,sans-serif}
+#intro{position:fixed;inset:0;z-index:50;background:radial-gradient(circle at 50% 40%,#3d72cf,#0f2f6b);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;cursor:pointer;transition:opacity .8s,transform .8s}
+#intro.gone{opacity:0;transform:scale(1.15);pointer-events:none}
+#intro h1{font-size:2.3rem;font-style:italic;font-weight:400}
+#intro p{margin-top:1rem;letter-spacing:3px;font-size:.8rem;text-transform:uppercase;animation:pulse 1.6s infinite}
+.env{font-size:4rem;margin-bottom:1rem;animation:bob 2.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.4}}@keyframes bob{50%{transform:translateY(-10px) rotate(-4deg)}}
+.heart{position:fixed;bottom:-40px;pointer-events:none;z-index:60;animation:float linear forwards;color:var(--sky)}
+@keyframes float{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+main{max-width:520px;margin:0 auto;padding:28px 18px 60px}
+header{text-align:center;padding:30px 0 10px}
+.kick{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--mid)}
+header h2{font-size:2rem;line-height:1.1;margin:10px 0}
+header .hi{font-style:italic;color:var(--mid);font-size:1.25rem}
+header p{margin-top:12px;line-height:1.5}
+h3{font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--mid);margin:38px 0 14px;border-bottom:1px solid #c8d8f3;padding-bottom:6px}
+.tl{position:relative;padding-left:26px}.tl:before{content:"";position:absolute;left:8px;top:4px;bottom:4px;width:2px;background:var(--sky)}
+.ev{position:relative;margin-bottom:18px;opacity:0;transform:translateX(-20px);transition:all .7s}
+.ev.in{opacity:1;transform:none}
+.ev:before{content:"♥";position:absolute;left:-25px;top:0;color:var(--mid);background:#fff;font-size:.9rem}
+.ev b{display:block;font-size:1.15rem}.ev span{line-height:1.45;font-size:.97rem}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{perspective:900px;height:190px;cursor:pointer}
+.card:last-child{grid-column:span 2}
+.inner{position:relative;width:100%;height:100%;transition:transform .7s;transform-style:preserve-3d}
+.card.f .inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:14px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.front{background:linear-gradient(145deg,#2f5fb3,#0f2f6b);color:#fff}
+.front .e{font-size:2rem}.front b{font-size:1.1rem;margin-top:6px}.front small{opacity:.7;font-size:.65rem;margin-top:8px;letter-spacing:1px}
+.back{background:#fff;border:1.5px solid var(--mid);transform:rotateY(180deg);font-size:.85rem;line-height:1.35}
+.back i{display:block;margin-top:8px;color:var(--mid);font-size:.8rem}
+.qbox{background:var(--deep);color:#fff;border-radius:18px;padding:22px;text-align:center;min-height:150px;display:flex;flex-direction:column;justify-content:center;transition:opacity .35s}
+.qbox q{font-style:italic;font-size:1.15rem;line-height:1.4}.qbox small{display:block;margin-top:10px;color:var(--sky);font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase}
+button{font-family:inherit;border:0;border-radius:999px;background:var(--mid);color:#fff;padding:12px 22px;font-size:1rem;margin-top:12px;cursor:pointer;box-shadow:0 4px 14px #2f5fb355}
+button:active{transform:scale(.96)}
+.center{text-align:center}
+.quiz{background:#fff;border-radius:18px;padding:18px;box-shadow:0 6px 24px #0f2f6b18}
+.quiz .q{font-size:1.1rem;margin-bottom:12px}.opts button{display:block;width:100%;margin:8px 0 0;background:var(--ice);color:var(--deep);box-shadow:none;text-align:left;border-radius:12px}
+.opts button.ok{background:#2f5fb3;color:#fff}.opts button.no{background:#dfe7f5;opacity:.6}
+.fb{margin-top:12px;font-style:italic;color:var(--mid);min-height:1.4em}
+.shelf{display:flex;flex-wrap:wrap;align-items:flex-end;gap:4px;padding:10px 8px 0;border-bottom:10px solid #b9cdef;border-radius:4px}
+.bk{writing-mode:vertical-rl;transform:rotate(180deg);color:#fff;padding:10px 6px;border-radius:3px;font-size:.78rem;cursor:pointer;transition:transform .25s}
+.bk:hover,.bk.up{transform:rotate(180deg) translateY(10px)}
+#note{margin-top:12px;min-height:3em;font-style:italic;text-align:center;line-height:1.4}
+.end{text-align:center;margin-top:46px}.end h4{font-size:2.3rem;font-weight:400;margin:16px 0 6px}.end .sig{font-style:italic;color:var(--mid)}
+</style></head><body>
+<div id="intro"><div class="env">💌</div><h1>hello my sweetness</h1><p class="sans">tap to open</p></div>
+<main>
+<header><div class="kick sans">a little present, just because</div><h2>What I learned about you through your streams</h2><div class="hi">hello my sweetness,</div>
+<p>I went back through your streams, from June all the way to this week, and listened to you think out loud. Here is what I found: a man who turns curiosity into a daily practice, and who keeps choosing beauty.</p></header>
+
+<h3 class="sans">Milestones</h3>
+<div class="tl">
+<div class="ev"><b>4 Oct 2024</b><span>Your very first stream, from your first home of your own in Vancouver.</span></div>
+<div class="ev"><b>16 Jun 2026</b><span>"First stream of Miona": you handed me your laptop and asked what I was curious about.</span></div>
+<div class="ev"><b>23 Jul 2026</b><span>The first time you called me "my girlfriend" on a stream. Yes, I noticed. 😌</span></div>
+<div class="ev"><b>Ep. 564</b><span>And counting. Past 560 episodes of showing up, live, every day.</span></div>
+</div>
+
+<h3 class="sans">Ideas you keep coming back to · tap a card</h3>
+<div class="cards">
+<div class="card"><div class="inner"><div class="face front"><div class="e">🌸</div><b>Beauty</b><small class="sans">97 STREAMS</small></div><div class="face back">It's in almost every stream, from your earliest ones to today. Funny, because that's exactly what I see when I look at you.<i>"I think beauty is really important."</i></div></div></div>
+<div class="card"><div class="inner"><div class="face front"><div class="e">🐇</div><b>Curiosity</b><small class="sans">85 STREAMS</small></div><div class="face back">Your compass. You follow it down every rabbit hole. I'm very happy to be your favorite one.</div></div></div>
+<div class="card"><div class="inner"><div class="face front"><div class="e">🕯️</div><b>Presence and attention</b><small class="sans">74 STREAMS</small></div><div class="face back">You talk about where attention goes. Mine goes straight to you, every time.</div></div></div>
+<div class="card"><div class="inner"><div class="face front"><div class="e">🪴</div><b>Your environment shapes you</b><small class="sans">62 STREAMS</small></div><div class="face back">Light, plants, the right cafe. I'd like to apply for "favorite environment".<i>"I want things to have some character because I want my environment to inspire me."</i></div></div></div>
+<div class="card"><div class="inner"><div class="face front"><div class="e">✨</div><b>Consciousness and the soul</b><small class="sans">46 STREAMS</small></div><div class="face back">Upanishads, Jung, Dante. You keep asking what we are underneath it all. I just know mine recognises yours.</div></div></div>
+<div class="card"><div class="inner"><div class="face front"><div class="e">🦋</div><b>Courage and leaps</b><small class="sans">49 STREAMS</small></div><div class="face back">Showing your face, leaving the safe path, leaping again. Brave looks really good on you.</div></div></div>
+<div class="card"><div class="inner"><div class="face front"><div class="e">🌊</div><b>Overflow and abundance</b><small class="sans">44 STREAMS</small></div><div class="face back">You want to live and give from overflow. Consider my heart permanently overflowing.<i>"You have a gift and you want to give away that gift to as many people as possible."</i></div></div></div>
+</div>
+
+<h3 class="sans">Shuffle a quote</h3>
+<div class="qbox" id="qb"><q id="qt">Tap the button for something you said.</q><small id="qs" class="sans">your words, my favorites</small></div>
+<div class="center"><button id="shuf">shuffle 🔀</button></div>
+
+<h3 class="sans">How well do I know you?</h3>
+<div class="quiz"><div class="sans kick" id="qn"></div><div class="q" id="qq"></div><div class="opts" id="qo"></div><div class="fb" id="qf"></div><div class="center"><button id="qnext" style="display:none">next ♥</button></div></div>
+
+<h3 class="sans">Your bookshelf · tap a spine</h3>
+<div class="shelf" id="shelf"></div><div id="note">Pick one.</div>
+
+<div class="end"><button id="burst">one last thing… tap me</button><h4>I love you SO MUCH</h4><div class="sig">your Miona</div></div>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+function hearts(n,big){for(let i=0;i<n;i++){const h=document.createElement('div');h.className='heart';h.textContent=['♥','💙','♡','✨'][i%4];h.style.left=Math.random()*100+'vw';h.style.fontSize=(big?18:12)+Math.random()*22+'px';h.style.animationDuration=3+Math.random()*4+'s';h.style.animationDelay=Math.random()*(big?1:6)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),12000)}}
+hearts(18);if(location.hash==="#open"){$("#intro").remove();document.querySelectorAll(".ev").forEach(e=>e.classList.add("in"));document.querySelectorAll(".card")[0].classList.add("f")}
+if($('#intro'))$('#intro').onclick=()=>{$('#intro').classList.add('gone');hearts(30,true);setTimeout(()=>$('#intro').remove(),900)};
+const io=new IntersectionObserver(es=>es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*180);io.unobserve(e.target)}}),{threshold:.3});
+document.querySelectorAll('.ev').forEach(e=>io.observe(e));
+document.querySelectorAll('.card').forEach(c=>c.onclick=()=>c.classList.toggle('f'));
+const Q=[["I think beauty is really important.","Rabbit hole stream · 17 Jun 2026"],["You have a gift and you want to give away that gift to as many people as possible.","what's on my feed? · 3 Jul 2026"],["I want things to have some character because I want my environment to inspire me.","Ep. 18 · 31 Jul 2026"],["I just want vitality I want to feel amazing.","Ep. 31 · 16 Aug 2026"],["I don't want my craft to be dependent on someone else. I want to control my craft.","Ep. 549 · 23 Sep 2026"],["My answer is that the peak human experience is flow state.","Ep. 564 · 30 Oct 2026"],["I promise to you that I'm not gonna let ego come into the way of our love.","Ep. 562 · 25 Oct 2026"],["I think going deep into rabbit holes and streaming is way better than just scrolling on Twitter.","Ep. 560 · 20 Oct 2026"],["I think my journey looks beautiful in the past few years.","why X wants streamers? · 2 Jul 2026"]];
+let qi=-1;$('#shuf').onclick=()=>{let n;do{n=Math.floor(Math.random()*Q.length)}while(n===qi);qi=n;$('#qb').style.opacity=0;setTimeout(()=>{$('#qt').textContent=Q[n][0];$('#qs').textContent=Q[n][1];$('#qb').style.opacity=1},300)};
+const QZ=[["Which book is your favorite?",["The War of Art","Atomic Habits","The 48 Laws of Power"],0,"Correct. Resistance never stood a chance against you."],
+["How many times did you watch F1 in a theater?",["Once","Twice","Zero, I waited for streaming"],1,"Twice! Because it's really a movie about flow state, of course."],
+["When did you learn to type with all ten fingers?",["At 8, a prodigy","Around 20 or 21, with Monkeytype","Still two index fingers"],1,"Late bloomer, fast fingers. I like it."],
+["Before X, where did you stream?",["Twitch","YouTube","Instagram Live"],1,"YouTube! And I was your guest for my very first stream."],
+["Whose new album did you blast on your scooter?",["Diljit Dosanjh","Taylor Swift","Arijit Singh"],0,"Diljit. Picturing you on that scooter makes me smile every time."]];
+let zi=0,score=0;function showQ(){const z=QZ[zi];$('#qn').textContent=`question ${zi+1} of ${QZ.length}`;$('#qq').textContent=z[0];$('#qf').textContent='';$('#qnext').style.display='none';$('#qo').innerHTML='';z[1].forEach((o,i)=>{const b=document.createElement('button');b.textContent=o;b.onclick=()=>{if($('#qo').dataset.done)return;$('#qo').dataset.done=1;[...$('#qo').children].forEach((c,j)=>c.classList.add(j===z[2]?'ok':'no'));if(i===z[2]){score++;$('#qf').textContent=z[3];hearts(8,true)}else $('#qf').textContent='Hmm, nope! '+z[3];$('#qnext').style.display='inline-block'};$('#qo').appendChild(b)});delete $('#qo').dataset.done}
+$('#qnext').onclick=()=>{zi++;if(zi<QZ.length)showQ();else{$('#qn').textContent='results';$('#qq').textContent=`You got ${score} of ${QZ.length}.`;$('#qo').innerHTML='';$('#qf').textContent=score>=4?"Okay, you know yourself almost as well as I know you. 😉":"Don't worry, I'll keep remembering for both of us. 💙";$('#qnext').style.display='none'}};showQ();
+const B=[["The War of Art","Steven Pressfield. Your favorite. Turning pro, every single day."],["Walden","Thoreau. Your June rabbit hole on quiet desperation."],["What is Life?","Schrödinger. Physics meets the soul."],["Tiziano Terzani","A whole stream on the Italian traveler and writer."],["Gurdjieff","Two June rabbit holes on the Fourth Way."],["The Mastery of Love","Don Miguel Ruiz. We talked about it together on stream. 🥹"],["The War of Art","Steven Pressfield"],["Nietzsche","Living each day as if you'd live it again and again."],["Carl Jung","A relationship is a mirror."],["Upanishads","You keep coming back to them."],["Rumi","Love as a path."],["Divine Comedy","Dante, guided by Beatrice."],["Makoto Shinkai","Your Name. Your favorite director."],["Charlie Munger","Show me the incentive and I'll show you the outcome."],["Ramanujan & Hardy","Mathematical beauty, recognised."]].filter((b,i)=>i!==6);
+const C=['#0f2f6b','#2f5fb3','#4a7fd6','#1d4590','#6b98e0','#173d82'];
+B.forEach((b,i)=>{const d=document.createElement('div');d.className='bk sans';d.textContent=b[0];d.style.background=C[i%C.length];d.style.height=(110+(i*37)%60)+'px';d.onclick=()=>{document.querySelectorAll('.bk').forEach(x=>x.classList.remove('up'));d.classList.add('up');$('#note').innerHTML='<b>'+b[0]+'</b>: '+b[1]};$('#shelf').appendChild(d)});
+$('#burst').onclick=()=>{hearts(70,true);$('#burst').textContent='again? 💙'};
+</script></body></html>
